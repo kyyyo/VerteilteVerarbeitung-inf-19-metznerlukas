@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b5da687-f3b2-42c9-97d9-ed9889425cc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reactive_system/Coworker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/reactive_system/CoworkerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/EmployeeManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/EmployeeManagementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/Coworker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/reactive_system/CoworkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/reactive_system/EmployeeTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -24,54 +27,7 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-line="1" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#89#90#0" expanded="true" />
-                <element signature="e#138#139#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/Coworker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-              <folding>
-                <element signature="e#970#971#0" expanded="true" />
-                <element signature="e#1010#1011#0" expanded="true" />
-                <element signature="e#1106#1107#0" expanded="true" />
-                <element signature="e#1136#1137#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/reactive_system/CoworkerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,6 +36,14 @@
         <option value="JUnit4 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>coworker</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>employee</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,22 +56,30 @@
         <option value="$PROJECT_DIR$/src/test/java/reactive_system/MitarbeiterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/Mitarbeiter.java" />
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/Coworker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Coworker.java" />
+        <option value="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/CoworkerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/reactive_system/CoworkerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/EventTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee.java" />
+        <option value="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/EmployeeManagementTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/reactive_system/EmployeeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Event.java" />
+        <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/EmployeeManagement.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1612" />
-    <option name="height" value="876" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="2348" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,7 +117,40 @@
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
               <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="reactive_system" type="462c0819:PsiDirectoryNode" />
+              <item name="ServerSide" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="reactive_system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="reactive_system" type="462c0819:PsiDirectoryNode" />
+              <item name="ServerSide" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -156,7 +161,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556615818341" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557053881153" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -164,6 +169,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="reactive_system.ServerSide" />
       <recent name="reactive_system" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -182,20 +188,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CoworkerTest.switchStateTest">
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="reactive_system.main" />
-      <module name="reactive.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="reactive_system.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.EmployeeManagementTest.notifyTest">
     <configuration name="reactive_system" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -217,13 +210,12 @@
       <module name="reactive.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="reactive_system.*" />
+          <option name="PATTERN" value="reactive_system.ServerSide.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="reactive_system" />
-      <option name="MAIN_CLASS_NAME" value="reactive_system.CoworkerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="reactive_system.ServerSide" />
+      <option name="MAIN_CLASS_NAME" value="reactive_system.ServerSide.CoworkerTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -232,12 +224,12 @@
       <module name="reactive.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="reactive_system.*" />
+          <option name="PATTERN" value="reactive_system.ServerSide.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="reactive_system" />
-      <option name="MAIN_CLASS_NAME" value="reactive_system.CoworkerTest" />
+      <option name="PACKAGE_NAME" value="reactive_system.ServerSide" />
+      <option name="MAIN_CLASS_NAME" value="reactive_system.ServerSide.CoworkerTest" />
       <option name="METHOD_NAME" value="switchState" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -248,13 +240,29 @@
       <module name="reactive.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="reactive_system.*" />
+          <option name="PATTERN" value="reactive_system.ServerSide.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="reactive_system" />
-      <option name="MAIN_CLASS_NAME" value="reactive_system.CoworkerTest" />
+      <option name="PACKAGE_NAME" value="reactive_system.ServerSide" />
+      <option name="MAIN_CLASS_NAME" value="reactive_system.ServerSide.CoworkerTest" />
       <option name="METHOD_NAME" value="switchStateTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeManagementTest.notifyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reactive_system.ServerSide.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="reactive_system.ServerSide" />
+      <option name="MAIN_CLASS_NAME" value="reactive_system.ServerSide.EmployeeManagementTest" />
+      <option name="METHOD_NAME" value="notifyTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -262,11 +270,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeManagementTest.notifyTest" />
         <item itemvalue="JUnit.CoworkerTest.switchStateTest" />
         <item itemvalue="JUnit.CoworkerTest" />
         <item itemvalue="JUnit.CoworkerTest.switchState" />
         <item itemvalue="Gradle.reactive_system" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -282,8 +290,19 @@
       <updated>1553609662538</updated>
       <workItem from="1553609669094" duration="280000" />
       <workItem from="1556612221207" duration="42000" />
-      <workItem from="1556612523000" duration="3255000" />
+      <workItem from="1556612523000" duration="3399000" />
+      <workItem from="1556804994475" duration="1128000" />
+      <workItem from="1556893916091" duration="17000" />
+      <workItem from="1557052284582" duration="1597000" />
     </task>
+    <task id="LOCAL-00001" summary="Coworker class containing the ID and a Finite-State machine.">
+      <created>1556615916001</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556615916001</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -299,9 +318,24 @@
     <history-entry file="MitarbeiterTest_switchStateTest - 2019.04.30 at 11h 00m 39s.xml">
       <configuration name="MitarbeiterTest.switchStateTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="EmployeeManagementTest_notifyTest - 2019.05.05 at 12h 51m 44s.xml">
+      <configuration name="EmployeeManagementTest.notifyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeManagementTest_notifyTest - 2019.05.05 at 12h 52m 14s.xml">
+      <configuration name="EmployeeManagementTest.notifyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeManagementTest_notifyTest - 2019.05.05 at 12h 54m 15s.xml">
+      <configuration name="EmployeeManagementTest.notifyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeManagementTest_notifyTest - 2019.05.05 at 12h 54m 55s.xml">
+      <configuration name="EmployeeManagementTest.notifyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeManagementTest_notifyTest - 2019.05.05 at 12h 55m 02s.xml">
+      <configuration name="EmployeeManagementTest.notifyTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3577000" />
+    <option name="totallyTimeSpent" value="6463000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -313,29 +347,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="983" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="2348" height="1417" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15395188" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1909965" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32942554" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32866043" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32942554" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32942554" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.25467288" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32942554" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="12" weight="0.32942554" />
-      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32942554" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -345,6 +379,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Palette" order="9" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15463917" />
@@ -381,18 +416,117 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Coworker class containing the ID and a Finite-State machine." />
+    <option name="LAST_COMMIT_MESSAGE" value="Coworker class containing the ID and a Finite-State machine." />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/test/java/MitarbeiterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/reactive_system/EmployeeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/EventTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/EmployeeManagementTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="30" column="90" selection-start-line="30" selection-start-column="90" selection-end-line="30" selection-end-column="90" />
+          <folding>
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="9" selection-start-column="9" selection-end-line="1" selection-end-column="13" />
+          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          <folding>
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/EmployeeManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1410#1411#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="175">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#89#90#0" expanded="true" />
             <element signature="e#138#139#0" expanded="true" />
@@ -400,30 +534,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MitarbeiterTest.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/reactive_system/CoworkerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/Coworker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="e#970#971#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1106#1107#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>

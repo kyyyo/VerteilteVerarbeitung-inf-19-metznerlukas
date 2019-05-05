@@ -1,14 +1,14 @@
-package reactive_system;
+package reactive_system.ServerSide;
 
 /**
- * The coworker class contains a Finite-state machine
- * which decides the current state of the coworker.
+ * The employee class contains a Finite-state machine
+ * which decides the current state of the employee.
  * The class also contains the ID for the employee.
  *
  * @author Name: Lukas Metzner ; Matrikel: 884220 ; <Lukas.Metzner@stud.fh-rosenheim.de>
  * @version 1.0
  */
-public class Coworker {
+public class Employee {
 
     /**
      * A Enum containing all possible states
@@ -29,29 +29,29 @@ public class Coworker {
 
 
     /**
-     * Current state of a coworker
+     * Current state of a employee
      */
     private State currentState;
 
     /**
-     * The ID of a coworker
+     * The ID of a employee
      */
     private String ID;
 
 
 
     /**
-     * Sets ID of a coworker
+     * Sets ID of a employee
      *
      * @param ID
      */
-    public Coworker(String ID){
+    public Employee(String ID){
         this.currentState = State.ABWESEND;
         this.ID = ID;
     }
 
     /**
-     * changes currentState when coworker takes left or right path
+     * changes currentState when employee takes left or right path
      * @param input
      */
     public void switchState(Input input){
@@ -59,7 +59,7 @@ public class Coworker {
     }
 
     /**
-     * Returns current state of a coworker
+     * Returns current state of a employee
      * @return
      */
     public State getCurrentState(){
@@ -67,7 +67,7 @@ public class Coworker {
     }
 
     /**
-     * Returns the ID of a coworker
+     * Returns the ID of a employee
      * @return
      */
     public String getID() {
