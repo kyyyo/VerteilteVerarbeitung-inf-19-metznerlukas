@@ -1,5 +1,7 @@
 package reactive_system.ServerSide;
 
+import reactive_system.ServerSide.Employee.Employee;
+
 /**
  * Event class which contains the ID of the employee
  * that caused the event and the input which means

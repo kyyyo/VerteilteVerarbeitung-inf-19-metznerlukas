@@ -1,4 +1,4 @@
-package reactive_system.ServerSide;
+package reactive_system.ServerSide.Employee;
 
 /**
  * The employee class contains a Finite-state machine
@@ -65,6 +65,8 @@ public class Employee {
     public State getCurrentState(){
         return this.currentState;
     }
+
+    public void setCurrentState(State newState) {this.currentState = newState;}
 
     /**
      * Returns the ID of a employee
