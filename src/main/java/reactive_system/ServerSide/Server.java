@@ -1,20 +1,11 @@
 package reactive_system.ServerSide;
 
-import reactive_system.ServerSide.Employee.Employee;
-import reactive_system.ServerSide.Employee.EmployeeManagement;
 import reactive_system.ServerSide.Handler.EventHandler;
 import reactive_system.ServerSide.Handler.SocketHandler;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
-import java.net.InetAddress;
-import java.net.ServerSocket;
-import java.net.Socket;
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.LinkedBlockingQueue;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -36,9 +27,9 @@ public class Server {
     private static int port;
     private static int fixedThreadPoolNum;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        blockingQueue = new LinkedBlockingDeque<>();
+        blockingQueue = new LinkedBlockingQueue<>();
         setupFromArgs(args);
         try {
             setupLogger();
@@ -70,21 +61,21 @@ public class Server {
      * Prases arguments:
      * First Arg: Port number
      * Second Arg: Number that determents the max size of thread pool
+     *
      * @param args
      */
     private static void setupFromArgs(String[] args) {
-        if(args == null)
+        if (args == null)
             System.out.println("Arguments are null: Port fixedThreadPoolNumber");
-        if(args.length < 1)
+        if (args.length < 1)
             System.out.println("Not enough arguments: Port fixedThreadPoolNumber");
 
         try {
             port = Integer.parseInt(args[0]);
-        } catch (Exception e) {
-        }
-        try {
             fixedThreadPoolNum = Integer.parseInt(args[1]);
         } catch (Exception e) {
+            serverLog.severe(e.getMessage());
+            System.exit(1);
         }
 
     }

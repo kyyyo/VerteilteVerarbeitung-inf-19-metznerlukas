@@ -13,6 +13,7 @@ import java.util.logging.SimpleFormatter;
 /**
  * Singleton class that holds a list of all employees and
  * class switch state function on one of them if the notify function is called
+ *
  * @author Name: Lukas Metzner ; Matrikel: 884220 ; <Lukas.Metzner@stud.fh-rosenheim.de>
  * @version 1.0
  */
@@ -40,7 +41,7 @@ public final class EmployeeManagement {
      * employeeManagementLog writes in file EmployeeManagementLog.log
      * eventLog writes in file EventLog.log
      */
-    private EmployeeManagement(){
+    private EmployeeManagement() {
         Employees = new ArrayList<>();
 
         employeeManagementLog = Logger.getLogger("employeeManagementLog");
@@ -72,9 +73,10 @@ public final class EmployeeManagement {
 
     /**
      * Function which makes class a singleton object
+     *
      * @return
      */
-    public static EmployeeManagement getInstance(){
+    public static EmployeeManagement getInstance() {
         return EmployeeManagement.instance;
     }
 
@@ -84,15 +86,16 @@ public final class EmployeeManagement {
      * employee does not exists, a new one is created
      * and the switch state will be called. If the employee
      * is in the error state he will be reseted.
+     *
      * @param e
      */
-    public void notify(Event e){
+    public void notify(Event e) {
         Boolean found = false;
-        for (Employee emp: Employees ) {
-            if(emp.getID().equals(e.getID())){
+        for (Employee emp : Employees) {
+            if (emp.getID().equals(e.getID())) {
                 found = true;
-                if(emp.getCurrentState() == Employee.State.FEHLER){
-                    emp.setCurrentState(Employee.State.ABWESEND);
+                if (emp.getCurrentState() == Employee.State.ERROR) {
+                    emp.setCurrentState(Employee.State.AWAY);
                     employeeManagementLog.severe("Employee with ID " + e.getID() + " was in a error state and got reseted");
                     break;
                 }
@@ -102,7 +105,7 @@ public final class EmployeeManagement {
             }
         }
 
-        if(!found){
+        if (!found) {
             Employee tmp = new Employee((e.getID()));
             Employees.add(tmp);
             employeeManagementLog.info("Employee with ID: " + tmp.getID() + " has been added to database");
@@ -111,8 +114,8 @@ public final class EmployeeManagement {
         }
     }
 
-    public List<Employee> getEmployees(){
-        return this.Employees;
+    public List<Employee> getEmployees() {
+        return Employees;
     }
 
 }

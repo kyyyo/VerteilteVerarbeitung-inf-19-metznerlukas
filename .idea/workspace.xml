@@ -2,31 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b5da687-f3b2-42c9-97d9-ed9889425cc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/Sensor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/EmployeeManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/EventHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/SocketHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/RandomDataGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Handler/SocketHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Employee$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Employee$State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/EmployeeManagement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/reactive_system/ClientSide/Sensor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/reactive_system/ClientSide/Sensor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/ClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Employee/Employee$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Employee/Employee$Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Employee/Employee$State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Employee/Employee$State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Employee/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Employee/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Employee/EmployeeManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Employee/EmployeeManagement.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Event.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/reactive_system/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/reactive_system/EmployeeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/reactive_system/EmployeeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/reactive_system/ServerSide/EmployeeManagementTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/reactive_system/ServerSide/EmployeeManagementTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/reactive_system/ServerSide/EventTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/EmployeeManagement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Server$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Server$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/reactive_system/ServerSide/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/reactive_system/EmployeeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/reactive_system/ServerSide/EmployeeManagementTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/Sensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/Sensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/EmployeeManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/EmployeeManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/reactive_system/EmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/reactive_system/EmployeeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/EmployeeManagementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/EmployeeManagementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/EventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/reactive_system/EmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Employee/EmployeeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/EmployeeManagementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Employee/EmployeeManagementTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -43,46 +45,13 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/SocketHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/ClientHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="FxmlFile" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -90,6 +59,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>coworker</find>
+      <find>rechts</find>
+      <find>abwesend</find>
+      <find>anwesend</find>
+      <find>links</find>
+      <find>fehler</find>
     </findStrings>
     <replaceStrings>
       <replace>employee</replace>
@@ -114,37 +88,44 @@
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/EmployeeManagement.java" />
         <option value="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/EmployeeManagementTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee.java" />
-        <option value="$PROJECT_DIR$/src/test/java/reactive_system/EmployeeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/SockerThread.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/SocketThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/EmployeeManagement.java" />
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/Client.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/ServerLog.log" />
         <option value="$PROJECT_DIR$/EventLog.log" />
         <option value="$PROJECT_DIR$/EmployeeManagementLog.log" />
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/ClientHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/Sensor.java" />
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/EventHandling.java" />
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/SocketHandling.java" />
+        <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/SocketHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/EventHandler.java" />
+        <option value="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/ServerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Handler/SocketHandlerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/RandomDataGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/ClientHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/SocketHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/EmployeeManagement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/Sensor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/reactive_system/EmployeeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Employee/EmployeeManagementTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/Employee.java" />
+        <option value="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Employee/EmployeeTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="1734" />
-    <option name="height" value="1418" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1786" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -247,17 +228,36 @@
               <item name="reactive_system" type="462c0819:PsiDirectoryNode" />
               <item name="ServerSide" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="reactive_system" type="462c0819:PsiDirectoryNode" />
+              <item name="ServerSide" type="462c0819:PsiDirectoryNode" />
+              <item name="Employee" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="reactive_system" type="462c0819:PsiDirectoryNode" />
+              <item name="ServerSide" type="462c0819:PsiDirectoryNode" />
+              <item name="Handler" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557991590056" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558284658606" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -266,6 +266,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="reactive_system.ServerSide.Handler" />
       <recent name="reactive_system.ServerSide" />
       <recent name="reactive_system" />
     </key>
@@ -285,7 +286,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Server">
+  <component name="RunManager" selected="JUnit.All in reactive.test">
     <configuration name="Sensor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="reactive_system.ClientSide.Sensor" />
       <module name="reactive.main" />
@@ -331,7 +332,15 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EmployeeManagementTest.notifyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in reactive.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive.test" />
       <extension name="coverage">
         <pattern>
@@ -339,26 +348,8 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="reactive_system.ServerSide" />
-      <option name="MAIN_CLASS_NAME" value="reactive_system.ServerSide.EmployeeManagementTest" />
-      <option name="METHOD_NAME" value="notifyTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeTest.switchStateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="reactive_system.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="reactive_system" />
-      <option name="MAIN_CLASS_NAME" value="reactive_system.EmployeeTest" />
-      <option name="METHOD_NAME" value="switchStateTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="reactive_system.ServerSide.Employee" />
+      <option name="MAIN_CLASS_NAME" value="reactive_system.ServerSide.Employee.EmployeeTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -367,16 +358,16 @@
       <item itemvalue="Application.Sensor" />
       <item itemvalue="Application.Server" />
       <item itemvalue="Gradle.reactive_system" />
-      <item itemvalue="JUnit.EmployeeManagementTest.notifyTest" />
-      <item itemvalue="JUnit.EmployeeTest.switchStateTest" />
+      <item itemvalue="JUnit.EmployeeTest" />
+      <item itemvalue="JUnit.All in reactive.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in reactive.test" />
+        <item itemvalue="JUnit.EmployeeTest" />
         <item itemvalue="Application.Sensor" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Gradle.reactive_system" />
-        <item itemvalue="JUnit.EmployeeTest.switchStateTest" />
-        <item itemvalue="JUnit.EmployeeManagementTest.notifyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -403,6 +394,9 @@
       <workItem from="1557849307701" duration="1521000" />
       <workItem from="1557989155351" duration="2692000" />
       <workItem from="1558073238334" duration="462000" />
+      <workItem from="1558075374277" duration="91000" />
+      <workItem from="1558078607900" duration="1874000" />
+      <workItem from="1558282785462" duration="1883000" />
     </task>
     <task id="LOCAL-00001" summary="Coworker class containing the ID and a Finite-State machine.">
       <created>1556615916001</created>
@@ -415,27 +409,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EmployeeManagementTest_notifyTest - 2019.05.05 at 12h 54m 15s.xml">
-      <configuration name="EmployeeManagementTest.notifyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeManagementTest_notifyTest - 2019.05.05 at 12h 54m 55s.xml">
-      <configuration name="EmployeeManagementTest.notifyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeManagementTest_notifyTest - 2019.05.05 at 12h 55m 02s.xml">
-      <configuration name="EmployeeManagementTest.notifyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeManagementTest_notifyTest - 2019.05.06 at 12h 03m 30s.xml">
-      <configuration name="EmployeeManagementTest.notifyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeManagementTest_notifyTest - 2019.05.06 at 12h 17m 25s.xml">
-      <configuration name="EmployeeManagementTest.notifyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeManagementTest_notifyTest - 2019.05.06 at 12h 21m 00s.xml">
-      <configuration name="EmployeeManagementTest.notifyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeManagementTest_notifyTest - 2019.05.06 at 13h 34m 50s.xml">
-      <configuration name="EmployeeManagementTest.notifyTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="EmployeeManagementTest_notifyTest - 2019.05.06 at 13h 51m 12s.xml">
       <configuration name="EmployeeManagementTest.notifyTest" configurationId="JUnit" />
     </history-entry>
@@ -445,9 +418,30 @@
     <history-entry file="EmployeeTest_switchStateTest - 2019.05.14 at 10h 16m 34s.xml">
       <configuration name="EmployeeTest.switchStateTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="EmployeeTest - 2019.05.19 at 18h 42m 22s.xml">
+      <configuration name="EmployeeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeTest - 2019.05.19 at 18h 43m 34s.xml">
+      <configuration name="EmployeeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeTest - 2019.05.19 at 18h 46m 57s.xml">
+      <configuration name="EmployeeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeTest - 2019.05.19 at 18h 47m 00s.xml">
+      <configuration name="EmployeeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeTest - 2019.05.19 at 18h 49m 08s.xml">
+      <configuration name="EmployeeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeTest - 2019.05.19 at 18h 49m 30s.xml">
+      <configuration name="EmployeeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_reactive_test - 2019.05.19 at 18h 51m 00s.xml">
+      <configuration name="All in reactive.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25435000" />
+    <option name="totallyTimeSpent" value="29283000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -459,10 +453,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="983" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="1786" height="1417" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20206186" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21436848" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -472,7 +465,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32866043" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.31074765" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39976552" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995327" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32942554" />
@@ -485,7 +478,7 @@
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32942554" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24948454" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24913093" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Maven" order="5" />
@@ -578,7 +571,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/EmployeeManagement.java</url>
-          <line>28</line>
+          <line>29</line>
           <properties field="Employees" class="reactive_system.ServerSide.Employee.EmployeeManagement" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -615,28 +608,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/EventTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/main.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ClientSide.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/reactive_system/EmployeeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/EmployeeManagementTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.desktop/javax/swing/text/html/CSS.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -644,61 +616,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/EmployeeManagement.java">
+    <entry file="file://$PROJECT_DIR$/EmployeeManagementLog.log" />
+    <entry file="file://$PROJECT_DIR$/EventLog.log" />
+    <entry file="file://$PROJECT_DIR$/ServerLog.log" />
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="105">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/ServerTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2264#2265#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EmployeeManagementLog.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EventLog.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServerLog.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-531">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/EventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1408">
-          <caret line="71" column="69" selection-start-line="71" selection-start-column="69" selection-end-line="71" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/Sensor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2333">
-          <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+        <state relative-caret-position="443">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -707,8 +650,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/SocketHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+        <state relative-caret-position="402">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -717,17 +670,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="594">
+          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/RandomDataGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="575">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/Sensor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/EmployeeManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Employee/EmployeeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Employee/EmployeeManagementTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="21" column="61" lean-forward="true" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Handler/SocketHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>

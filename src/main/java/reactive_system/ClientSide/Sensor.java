@@ -40,7 +40,6 @@ public class Sensor {
         setupFromArgs(args);
 
         String[] randomIDs = {"1234", "2341", "3412", "4123", "2143", "3321", "4444"};
-        Random randomGen = new Random();
         Boolean exit = false;
 
 
@@ -50,24 +49,15 @@ public class Sensor {
                  * Setup connection to server
                  */
                 Socket socket = new Socket(ip, port);
-
                 DataInputStream inputStream = new DataInputStream(socket.getInputStream());
                 DataOutputStream outputStream = new DataOutputStream(socket.getOutputStream());
+                RandomDataGenerator dataGenerator = new RandomDataGenerator(outputStream, sensorType, randomIDs);
 
                 /**
                  * Send random data all 5 seconds
                  */
                 while (!exit) {
-                    JSONObject testObj = new JSONObject();
-                    testObj.put("id", randomIDs[randomGen.nextInt(7)]);
-                    testObj.put("input", sensorType);
-                    outputStream.writeUTF(testObj.toString());
-                    outputStream.flush();
-                    try {
-                        Thread.sleep(5000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+                    dataGenerator.sendNewData();
                 }
             } catch (Exception e) {
                 clientLog.severe(e.getMessage());
@@ -78,6 +68,7 @@ public class Sensor {
 
     /**
      * Method to setup logger
+     *
      * @throws IOException
      */
     private static void setupLogger() throws IOException {
@@ -93,19 +84,20 @@ public class Sensor {
      * First Arg: SensorType either links or right
      * Second Arg: IpAddress parsed to InetAddress
      * Third Arg: Port parsed to Integer
+     *
      * @param args
      */
     private static void setupFromArgs(String[] args) {
-        if(args == null)
+        if (args == null)
             System.out.println("Arguments are null: SensorType IPAddress Port");
-        if(args.length < 2)
+        if (args.length < 2)
             System.out.println("Not enough arguments: SensorType IPAddress Port");
 
         try {
             if (args[0].equalsIgnoreCase("links")) {
-                sensorType = Employee.Input.LINKS;
+                sensorType = Employee.Input.LEFT;
             } else if (args[0].equalsIgnoreCase("rechts")) {
-                sensorType = Employee.Input.RECHTS;
+                sensorType = Employee.Input.RIGHT;
             } else {
                 System.out.println("Wrong type of sensor. Exiting!");
                 System.exit(-1);

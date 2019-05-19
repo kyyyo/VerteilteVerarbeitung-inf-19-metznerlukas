@@ -50,10 +50,10 @@ public class ClientHandler implements Runnable {
                  * Left or right string to enum conversion
                  */
                 Event event = null;
-                if (jsonEvent.getString("input").equalsIgnoreCase("links"))
-                    event = new Event(jsonEvent.getString("id"), Employee.Input.LINKS);
-                else if (jsonEvent.getString("input").equalsIgnoreCase("rechts"))
-                    event = new Event(jsonEvent.getString("id"), Employee.Input.RECHTS);
+                if (jsonEvent.getString("input").equalsIgnoreCase("left"))
+                    event = new Event(jsonEvent.getString("id"), Employee.Input.LEFT);
+                else if (jsonEvent.getString("input").equalsIgnoreCase("right"))
+                    event = new Event(jsonEvent.getString("id"), Employee.Input.RIGHT);
 
                 /**
                  * If the event was created successfully it will be put on the blocking queue, logged
