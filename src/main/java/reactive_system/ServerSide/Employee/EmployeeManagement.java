@@ -1,6 +1,7 @@
 package reactive_system.ServerSide.Employee;
 
 import reactive_system.ServerSide.Event;
+import reactive_system.Enums.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -94,8 +95,8 @@ public final class EmployeeManagement {
         for (Employee emp : Employees) {
             if (emp.getID().equals(e.getID())) {
                 found = true;
-                if (emp.getCurrentState() == Employee.State.ERROR) {
-                    emp.setCurrentState(Employee.State.AWAY);
+                if (emp.getCurrentState() == State.ERROR) {
+                    emp.setCurrentState(State.AWAY);
                     employeeManagementLog.severe("Employee with ID " + e.getID() + " was in a error state and got reseted");
                     break;
                 }

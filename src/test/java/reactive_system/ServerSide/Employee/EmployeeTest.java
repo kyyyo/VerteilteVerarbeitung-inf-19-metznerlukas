@@ -2,6 +2,8 @@ package reactive_system.ServerSide.Employee;
 
 import org.junit.Before;
 import org.junit.Test;
+import reactive_system.Enums.Input;
+import reactive_system.Enums.State;
 
 import static org.junit.Assert.assertEquals;
 
@@ -21,44 +23,44 @@ public class EmployeeTest {
      */
     @Test
     public void fromAwayLeft() {
-        testEmployee.setCurrentState(Employee.State.AWAY);
-        testEmployee.switchState(Employee.Input.LEFT);
-        assertEquals(Employee.State.HALLWAY, testEmployee.getCurrentState());
+        testEmployee.setCurrentState(State.AWAY);
+        testEmployee.switchState(Input.LEFT);
+        assertEquals(State.HALLWAY, testEmployee.getCurrentState());
     }
 
     @Test
     public void fromHallwayRight(){
-        testEmployee.setCurrentState(Employee.State.HALLWAY);
-        testEmployee.switchState(Employee.Input.RIGHT);
-        assertEquals(Employee.State.PRESENT, testEmployee.getCurrentState());
+        testEmployee.setCurrentState(State.HALLWAY);
+        testEmployee.switchState(Input.RIGHT);
+        assertEquals(State.PRESENT, testEmployee.getCurrentState());
     }
 
     @Test
     public void fromPresentRight(){
-        testEmployee.setCurrentState(Employee.State.PRESENT);
-        testEmployee.switchState(Employee.Input.RIGHT);
-        assertEquals(Employee.State.HALLWAY, testEmployee.getCurrentState());
+        testEmployee.setCurrentState(State.PRESENT);
+        testEmployee.switchState(Input.RIGHT);
+        assertEquals(State.HALLWAY, testEmployee.getCurrentState());
     }
 
     @Test
     public void fromHallwayLeft(){
-        testEmployee.setCurrentState(Employee.State.HALLWAY);
-        testEmployee.switchState(Employee.Input.LEFT);
-        assertEquals(Employee.State.AWAY, testEmployee.getCurrentState());
+        testEmployee.setCurrentState(State.HALLWAY);
+        testEmployee.switchState(Input.LEFT);
+        assertEquals(State.AWAY, testEmployee.getCurrentState());
     }
 
     @Test
     public void fromAwayRight(){
-        testEmployee.setCurrentState(Employee.State.AWAY);
-        testEmployee.switchState(Employee.Input.RIGHT);
-        assertEquals(Employee.State.ERROR, testEmployee.getCurrentState());
+        testEmployee.setCurrentState(State.AWAY);
+        testEmployee.switchState(Input.RIGHT);
+        assertEquals(State.ERROR, testEmployee.getCurrentState());
     }
 
     @Test
     public void fromPresentLeft(){
-        testEmployee.setCurrentState(Employee.State.PRESENT);
-        testEmployee.switchState(Employee.Input.LEFT);
-        assertEquals(Employee.State.ERROR, testEmployee.getCurrentState());
+        testEmployee.setCurrentState(State.PRESENT);
+        testEmployee.switchState(Input.LEFT);
+        assertEquals(State.ERROR, testEmployee.getCurrentState());
     }
 
 

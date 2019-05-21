@@ -2,6 +2,7 @@ package reactive_system.ClientSide;
 
 import org.json.JSONObject;
 import reactive_system.ServerSide.Employee.Employee;
+import reactive_system.Enums.*;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -10,11 +11,11 @@ import java.util.Random;
 public class RandomDataGenerator {
 
     private final DataOutputStream outputStream;
-    private final Employee.Input sensorType;
+    private final Input sensorType;
     private final String[] randomIDs;
     private final Random randomGen;
 
-    public RandomDataGenerator(DataOutputStream outputStream, Employee.Input sensorType, String[] randomIDs){
+    public RandomDataGenerator(DataOutputStream outputStream, Input sensorType, String[] randomIDs){
         this.outputStream = outputStream;
         this.sensorType = sensorType;
         this.randomIDs = randomIDs;

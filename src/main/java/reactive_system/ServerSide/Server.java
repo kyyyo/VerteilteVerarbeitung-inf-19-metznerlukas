@@ -29,6 +29,10 @@ public class Server {
 
     public static void main(String[] args) {
 
+        startServer(args);
+    }
+
+    public static void startServer(String[] args){
         blockingQueue = new LinkedBlockingQueue<>();
         setupFromArgs(args);
         try {

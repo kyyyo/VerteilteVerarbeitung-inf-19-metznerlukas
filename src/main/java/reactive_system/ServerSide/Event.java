@@ -1,6 +1,7 @@
 package reactive_system.ServerSide;
 
 import reactive_system.ServerSide.Employee.Employee;
+import reactive_system.Enums.*;
 
 /**
  * Event class which contains the ID of the employee
@@ -13,9 +14,9 @@ import reactive_system.ServerSide.Employee.Employee;
 public class Event {
 
     private String ID;
-    private Employee.Input Input;
+    private Input Input;
 
-    public Event(String ID, Employee.Input Input) {
+    public Event(String ID, Input Input) {
         this.ID = ID;
         this.Input = Input;
     }
@@ -25,7 +26,7 @@ public class Event {
     }
 
 
-    public Employee.Input getInput() {
+    public Input getInput() {
         return Input;
     }
 

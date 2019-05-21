@@ -3,6 +3,7 @@ package reactive_system.ServerSide.Handler;
 import org.json.JSONObject;
 import reactive_system.ServerSide.Employee.Employee;
 import reactive_system.ServerSide.Event;
+import reactive_system.Enums.*;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -51,9 +52,9 @@ public class ClientHandler implements Runnable {
                  */
                 Event event = null;
                 if (jsonEvent.getString("input").equalsIgnoreCase("left"))
-                    event = new Event(jsonEvent.getString("id"), Employee.Input.LEFT);
+                    event = new Event(jsonEvent.getString("id"), Input.LEFT);
                 else if (jsonEvent.getString("input").equalsIgnoreCase("right"))
-                    event = new Event(jsonEvent.getString("id"), Employee.Input.RIGHT);
+                    event = new Event(jsonEvent.getString("id"), Input.RIGHT);
 
                 /**
                  * If the event was created successfully it will be put on the blocking queue, logged
@@ -62,7 +63,7 @@ public class ClientHandler implements Runnable {
                  */
                 if (event != null) {
                     blockingQueue.put(event);
-                    serverLog.info("Event with employee id " + event.getID() + " was put on the blocking queue");
+                    serverLog.info("Event from Employee with id " + event.getID() + " was put on the blocking queue");
                     this.outputStream.writeUTF("EventHandler Successfull");
                     this.outputStream.flush();
                 } else {

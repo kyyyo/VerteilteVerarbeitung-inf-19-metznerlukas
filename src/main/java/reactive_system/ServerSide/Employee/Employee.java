@@ -1,5 +1,8 @@
 package reactive_system.ServerSide.Employee;
 
+import reactive_system.Enums.Input;
+import reactive_system.Enums.State;
+
 /**
  * The employee class contains a Finite-state machine
  * which decides the current state of the employee.
@@ -68,14 +71,4 @@ public class Employee {
     public String getID() {
         return this.ID;
     }
-
-    /**
-     * A Enum containing all possible states
-     */
-    public enum State {AWAY, HALLWAY, PRESENT, ERROR}
-
-    /**
-     * A Enum containing all possible inputs
-     */
-    public enum Input {LEFT, RIGHT}
 }

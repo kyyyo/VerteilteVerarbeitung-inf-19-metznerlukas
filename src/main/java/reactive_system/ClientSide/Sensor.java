@@ -1,14 +1,12 @@
 package reactive_system.ClientSide;
 
-import org.json.JSONObject;
+import reactive_system.Enums.Input;
 import reactive_system.ServerSide.Employee.Employee;
 
-import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.Socket;
-import java.util.Random;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -25,7 +23,7 @@ public class Sensor {
 
     private static InetAddress ip;
     private static int port;
-    private static Employee.Input sensorType;
+    private static Input sensorType;
     private static Logger clientLog;
 
     public static void main(String[] args) {
@@ -49,7 +47,6 @@ public class Sensor {
                  * Setup connection to server
                  */
                 Socket socket = new Socket(ip, port);
-                DataInputStream inputStream = new DataInputStream(socket.getInputStream());
                 DataOutputStream outputStream = new DataOutputStream(socket.getOutputStream());
                 RandomDataGenerator dataGenerator = new RandomDataGenerator(outputStream, sensorType, randomIDs);
 
@@ -95,9 +92,9 @@ public class Sensor {
 
         try {
             if (args[0].equalsIgnoreCase("links")) {
-                sensorType = Employee.Input.LEFT;
+                sensorType = Input.LEFT;
             } else if (args[0].equalsIgnoreCase("rechts")) {
-                sensorType = Employee.Input.RIGHT;
+                sensorType = Input.RIGHT;
             } else {
                 System.out.println("Wrong type of sensor. Exiting!");
                 System.exit(-1);
