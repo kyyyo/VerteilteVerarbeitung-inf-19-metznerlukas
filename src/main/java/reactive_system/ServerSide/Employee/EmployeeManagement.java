@@ -1,7 +1,7 @@
 package reactive_system.ServerSide.Employee;
 
+import reactive_system.Enums.State;
 import reactive_system.ServerSide.Event;
-import reactive_system.Enums.*;
 
 import java.io.IOException;
 import java.util.ArrayList;

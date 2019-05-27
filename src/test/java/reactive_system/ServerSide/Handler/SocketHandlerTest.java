@@ -1,7 +1,6 @@
 package reactive_system.ServerSide.Handler;
 
 import org.json.JSONObject;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import reactive_system.Enums.State;
@@ -11,7 +10,6 @@ import reactive_system.ServerSide.Server;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.net.InetAddress;
 import java.net.Socket;
 import java.util.List;
 

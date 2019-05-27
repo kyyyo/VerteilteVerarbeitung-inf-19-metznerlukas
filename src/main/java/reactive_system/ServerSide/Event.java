@@ -1,7 +1,6 @@
 package reactive_system.ServerSide;
 
-import reactive_system.ServerSide.Employee.Employee;
-import reactive_system.Enums.*;
+import reactive_system.Enums.Input;
 
 /**
  * Event class which contains the ID of the employee

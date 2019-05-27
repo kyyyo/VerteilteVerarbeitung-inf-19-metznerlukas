@@ -32,7 +32,7 @@ public class Server {
         startServer(args);
     }
 
-    public static void startServer(String[] args){
+    public static void startServer(String[] args) {
         blockingQueue = new LinkedBlockingQueue<>();
         setupFromArgs(args);
         try {

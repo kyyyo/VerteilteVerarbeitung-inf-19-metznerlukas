@@ -1,7 +1,6 @@
 package reactive_system.ClientSide;
 
 import reactive_system.Enums.Input;
-import reactive_system.ServerSide.Employee.Employee;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -91,9 +90,9 @@ public class Sensor {
             System.out.println("Not enough arguments: SensorType IPAddress Port");
 
         try {
-            if (args[0].equalsIgnoreCase("links")) {
+            if (args[0].equalsIgnoreCase("left")) {
                 sensorType = Input.LEFT;
-            } else if (args[0].equalsIgnoreCase("rechts")) {
+            } else if (args[0].equalsIgnoreCase("right")) {
                 sensorType = Input.RIGHT;
             } else {
                 System.out.println("Wrong type of sensor. Exiting!");
