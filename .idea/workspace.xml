@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b5da687-f3b2-42c9-97d9-ed9889425cc9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/RandomDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/RandomDataGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/Sensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/Sensor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/Enums/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/Enums/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/Enums/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/Enums/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/EmployeeManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/EmployeeManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Handler/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Employee/EmployeeManagementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Employee/EmployeeManagementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeManagementLog.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventLog.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerLog.log.lck" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Handler/SocketHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Handler/SocketHandlerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,20 +38,20 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/Sensor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="98" column="18" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Server.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,6 +60,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Handler/SocketHandlerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="823">
+              <caret line="68" column="24" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -143,10 +148,10 @@
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/RandomDataGenerator.java" />
         <option value="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Employee/EmployeeManagementTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Employee/EmployeeTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Handler/SocketHandlerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/UtilityClasses/IConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/Sensor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Handler/SocketHandlerTest.java" />
       </list>
     </option>
   </component>
@@ -160,62 +165,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="metznerlukas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="metznerlukas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="metznerlukas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="metznerlukas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reactive_system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="metznerlukas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="reactive_system" type="462c0819:PsiDirectoryNode" />
-              <item name="ClientSide" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reactive_system" type="462c0819:PsiDirectoryNode" />
-              <item name="Enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="metznerlukas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -224,71 +211,40 @@
             </path>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reactive_system" type="462c0819:PsiDirectoryNode" />
-              <item name="ServerSide" type="462c0819:PsiDirectoryNode" />
-              <item name="Employee" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reactive_system" type="462c0819:PsiDirectoryNode" />
-              <item name="ServerSide" type="462c0819:PsiDirectoryNode" />
-              <item name="Handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="metznerlukas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="metznerlukas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="metznerlukas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reactive_system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reactive_system" type="462c0819:PsiDirectoryNode" />
               <item name="ServerSide" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="metznerlukas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reactive_system" type="462c0819:PsiDirectoryNode" />
               <item name="ServerSide" type="462c0819:PsiDirectoryNode" />
               <item name="Employee" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive_system" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="metznerlukas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reactive_system" type="462c0819:PsiDirectoryNode" />
               <item name="ServerSide" type="462c0819:PsiDirectoryNode" />
               <item name="Handler" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -301,7 +257,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558944911924" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558952148785" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -333,7 +289,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Sensor">
+  <component name="RunManager" selected="JUnit.reactive_system.ServerSide in reactive.test">
     <configuration name="Sensor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="reactive_system.ClientSide.Sensor" />
       <module name="reactive.main" />
@@ -377,21 +333,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SocketHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="reactive_system.ServerSide.Handler.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="reactive_system.ServerSide.Handler" />
-      <option name="MAIN_CLASS_NAME" value="reactive_system.ServerSide.Handler.SocketHandlerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="reactive_system in reactive.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive.test" />
       <extension name="coverage">
@@ -406,20 +347,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="reactive_system.ServerSide in reactive.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reactive_system.ServerSide.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="reactive_system.ServerSide" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Sensor" />
       <item itemvalue="Application.Server" />
-      <item itemvalue="JUnit.SocketHandlerTest" />
       <item itemvalue="JUnit.reactive_system in reactive.test" />
       <item itemvalue="JUnit.EmployeeTest" />
+      <item itemvalue="JUnit.reactive_system.ServerSide in reactive.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.reactive_system.ServerSide in reactive.test" />
         <item itemvalue="Application.Sensor" />
         <item itemvalue="Application.Server" />
         <item itemvalue="JUnit.reactive_system in reactive.test" />
         <item itemvalue="JUnit.EmployeeTest" />
-        <item itemvalue="JUnit.SocketHandlerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -456,6 +411,8 @@
       <workItem from="1558944297681" duration="314000" />
       <workItem from="1558944696878" duration="123000" />
       <workItem from="1558944861512" duration="91000" />
+      <workItem from="1558952094869" duration="70000" />
+      <workItem from="1558952804214" duration="169000" />
     </task>
     <task id="LOCAL-00001" summary="Coworker class containing the ID and a Finite-State machine.">
       <created>1556615916001</created>
@@ -468,9 +425,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SocketHandlerTest - 2019.05.20 at 14h 24m 51s.xml">
-      <configuration name="SocketHandlerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SocketHandlerTest - 2019.05.20 at 14h 25m 39s.xml">
       <configuration name="SocketHandlerTest" configurationId="JUnit" />
     </history-entry>
@@ -498,9 +452,12 @@
     <history-entry file="reactive_system_in_reactive_test - 2019.05.21 at 09h 46m 23s.xml">
       <configuration name="reactive_system in reactive.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="reactive_system_ServerSide_in_reactive_test - 2019.05.27 at 12h 16m 03s.xml">
+      <configuration name="reactive_system.ServerSide in reactive.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35450000" />
+    <option name="totallyTimeSpent" value="35689000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -515,7 +472,7 @@
     <frame x="-6" y="-6" width="1513" height="983" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2041237" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.209622" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -539,7 +496,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24913093" />
-      <window_info anchor="right" id="Gradle" order="3" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.18006873" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
@@ -771,13 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Handler/SocketHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ServerSide/Employee/EmployeeManagement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -791,7 +741,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/UtilityClasses/IConfiguration.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/reactive_system/ClientSide/Sensor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
+        <state relative-caret-position="760">
           <caret line="98" column="18" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -806,6 +756,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/reactive_system/ServerSide/Handler/SocketHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="823">
+          <caret line="68" column="24" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
         </state>
       </provider>
     </entry>

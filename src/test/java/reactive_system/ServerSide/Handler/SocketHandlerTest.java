@@ -29,6 +29,9 @@ public class SocketHandlerTest {
 
     @Test
     public void testData(){
+        /**
+         * Creating fake Sensor with Sockets
+         */
         Socket tmpSocket = null;
         try {
             tmpSocket = new Socket("localhost", 1337);
@@ -44,6 +47,10 @@ public class SocketHandlerTest {
                 e.printStackTrace();
             }
 
+
+            /**
+             * Sending test json objects
+             */
             if(dataOutputStream != null){
                 JSONObject obj = new JSONObject();
                 obj.put("input", "left");
@@ -56,6 +63,11 @@ public class SocketHandlerTest {
                     e.printStackTrace();
                 }
 
+                /**
+                 * Employee management list should contain new employee
+                 * with id 4444 that was send in the json object
+                 * above
+                 */
                 List<Employee> testEmployees = EmployeeManagement.getInstance().getEmployees();
                 for(Employee e : testEmployees){
                     if(e.getID().equalsIgnoreCase("4444")){
