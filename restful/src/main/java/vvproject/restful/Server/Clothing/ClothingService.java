@@ -11,6 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Clothing service handles the access for the
+ * clothing database. -> Resolving Optional<Clothing>
+ * @author Lukas Metzner, sINFlumetz
+ */
 @Service("ClothingService")
 public class ClothingService {
     private ClothingRepository clothingRepository;

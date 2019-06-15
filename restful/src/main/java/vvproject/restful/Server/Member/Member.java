@@ -9,6 +9,12 @@ import javax.persistence.Version;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * The member class represents a account in the
+ * database storing information like the unique username
+ * or the hashed password.
+ * @author Lukas Metzner, sINFlumetz
+ */
 @Entity
 public class Member {
     @OneToMany

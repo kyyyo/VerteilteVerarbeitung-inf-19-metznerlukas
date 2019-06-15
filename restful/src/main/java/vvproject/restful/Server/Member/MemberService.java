@@ -9,6 +9,11 @@ import vvproject.restful.Server.Member.MemberExceptions.WrongLoginException;
 import java.nio.charset.StandardCharsets;
 import java.util.Optional;
 
+/**
+ * The member service controls the access to
+ * the member repository
+ * @author Lukas Metzner, sINFlumetz
+ */
 @Service("MemberService")
 public class MemberService {
     private MemberRepository memberRepository;

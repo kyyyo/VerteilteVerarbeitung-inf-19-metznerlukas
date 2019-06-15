@@ -9,6 +9,11 @@ import vvproject.restful.Server.Member.Member;
 import javax.persistence.*;
 import java.util.Objects;
 
+/**
+ * The clothing entity generates a unique Id and
+ * stores all important information about the clothing like
+ * fitting, type, gender, etc. Including the owner.
+ */
 @Entity
 public class Clothing {
     @Id

@@ -18,6 +18,10 @@ import vvproject.restful.Server.Transaction.Transaction;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Main controller contains all REST interfaces
+ * @author Lukas Metzner, sINFlumetz
+ */
 @Api
 @RestController
 public class MainController {

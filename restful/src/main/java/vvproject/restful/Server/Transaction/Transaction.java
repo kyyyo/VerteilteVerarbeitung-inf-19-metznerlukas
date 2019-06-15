@@ -5,6 +5,12 @@ import vvproject.restful.Server.Member.Member;
 
 import javax.persistence.*;
 
+/**
+ * A transaction stores the buyer and seller including
+ * the clothing. Every transaction gets a unique random
+ * generated ID.
+ * @author Lukas Metzner, sINFlumetz
+ */
 @Entity
 public class Transaction {
     @Id

@@ -22,6 +22,11 @@ import vvproject.restful.Server.Transaction.TransactionService;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
+/**
+ * Main services contains the main logic of the Server.
+ * Combines all the subservices.
+ * @author Lukas Metzner, sINFlumetz
+ */
 @Service("MainService")
 public class MainService {
     private MemberService memberService;
