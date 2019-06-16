@@ -14,6 +14,7 @@ import vvproject.restful.Server.Member.Member;
 import vvproject.restful.Server.Member.MemberExceptions.MemberNotFoundException;
 import vvproject.restful.Server.Member.MemberExceptions.WrongLoginException;
 import vvproject.restful.Server.Transaction.Transaction;
+import vvproject.restful.Server.Transaction.TransactionException.TransactionNotFoundException;
 
 import java.util.List;
 import java.util.Map;
@@ -51,7 +52,7 @@ public class MainController {
     }
 
     @RequestMapping(
-            value = "/clothing/buy/{id}",
+            value = "/clothing/{id}/buy",
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
@@ -61,7 +62,7 @@ public class MainController {
 
     @RequestMapping(
             value = "/clothing/sell",
-            method = RequestMethod.PUT,
+            method = RequestMethod.POST,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
     public ResponseEntity<Void> sellClothing(@RequestBody Clothing c, @RequestHeader Map<String, String> headers) throws MemberNotFoundException, MaxSellingSizeException, WrongPricingException, WrongLoginException {
@@ -78,7 +79,7 @@ public class MainController {
     }
 
     @RequestMapping(
-            value = "/clothing/remove/{id}",
+            value = "/clothing/{id}",
             method = RequestMethod.DELETE,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
@@ -93,5 +94,14 @@ public class MainController {
     )
     public ResponseEntity<List<Transaction>> getTransactions() {
         return this.mainService.getAllTransactions();
+    }
+
+    @RequestMapping(
+            value = "/transactions/{id}",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    public ResponseEntity<Transaction> getTransaction(@PathVariable Long id) throws TransactionNotFoundException {
+        return this.mainService.getTransaction(id);
     }
 }

@@ -31,7 +31,7 @@ public class ClothingService {
 
     public List<Clothing> findAll() {
         List<Clothing> allClothings = new ArrayList<>();
-        this.clothingRepository.findAll().forEach((e) -> allClothings.add(e));
+        this.clothingRepository.findAll().forEach((clothing) -> allClothings.add(clothing));
         return allClothings;
     }
 

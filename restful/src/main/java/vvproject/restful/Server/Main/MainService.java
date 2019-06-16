@@ -17,6 +17,7 @@ import vvproject.restful.Server.Member.MemberExceptions.MemberNotFoundException;
 import vvproject.restful.Server.Member.MemberExceptions.WrongLoginException;
 import vvproject.restful.Server.Member.MemberService;
 import vvproject.restful.Server.Transaction.Transaction;
+import vvproject.restful.Server.Transaction.TransactionException.TransactionNotFoundException;
 import vvproject.restful.Server.Transaction.TransactionService;
 
 import java.nio.charset.StandardCharsets;
@@ -103,24 +104,17 @@ public class MainService {
     }
 
     public ResponseEntity<Void> register(Member m) {
-        Member member = new Member(
-                m.getUsername(),
-                Hashing.sha256().hashString(m.getPassword(), StandardCharsets.UTF_8).toString(),
-                m.getPreName(),
-                m.getLastName(),
-                m.geteMail(),
-                m.getPostTown(),
-                m.getAddress(),
-                m.getPostCode(),
-                m.getVersion(),
-                m.getAccountBalance()
-
-        );
-        this.memberService.saveMember(member);
+        String hashedPw = Hashing.sha256().hashString(m.getPassword(), StandardCharsets.UTF_8).toString();
+        m.setPassword(hashedPw);
+        this.memberService.saveMember(m);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
     public ResponseEntity<List<Transaction>> getAllTransactions() {
         return new ResponseEntity<>(this.transactionService.findAllTransactions(), HttpStatus.OK);
+    }
+
+    public ResponseEntity<Transaction> getTransaction(Long id) throws TransactionNotFoundException {
+        return new ResponseEntity<>(this.transactionService.findById(id), HttpStatus.OK);
     }
 }

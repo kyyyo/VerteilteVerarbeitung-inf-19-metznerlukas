@@ -11,5 +11,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ResponseStatus(HttpStatus.NOT_FOUND)
 public class MemberNotFoundException extends Throwable {
     public MemberNotFoundException(String s) {
+        super(s);
     }
 }

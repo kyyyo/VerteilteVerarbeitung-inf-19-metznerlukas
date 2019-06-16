@@ -11,5 +11,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ResponseStatus(HttpStatus.BAD_REQUEST)
 public class MaxSellingSizeException extends Throwable {
     public MaxSellingSizeException(String s) {
+        super(s);
     }
 }

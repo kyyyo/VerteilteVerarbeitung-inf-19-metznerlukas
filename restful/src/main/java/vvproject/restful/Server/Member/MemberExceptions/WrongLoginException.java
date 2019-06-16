@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  */
 @ResponseStatus(HttpStatus.FORBIDDEN)
 public class WrongLoginException extends Throwable {
-    public WrongLoginException(String wrong_password) {
+    public WrongLoginException(String s) {
+        super(s);
     }
 }

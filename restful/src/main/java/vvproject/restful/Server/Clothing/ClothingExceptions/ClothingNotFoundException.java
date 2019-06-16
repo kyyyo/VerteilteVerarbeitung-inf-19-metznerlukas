@@ -11,5 +11,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ResponseStatus(HttpStatus.NOT_FOUND)
 public class ClothingNotFoundException extends Throwable {
     public ClothingNotFoundException(String s) {
+        super(s);
     }
 }

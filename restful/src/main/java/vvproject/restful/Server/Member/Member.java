@@ -157,4 +157,16 @@ public class Member {
     public void setPostCode(int postCode) {
         this.postCode = postCode;
     }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public List<Clothing> getOwnedClothing() {
+        return ownedClothing;
+    }
+
+    public void setOwnedClothing(List<Clothing> ownedClothing) {
+        this.ownedClothing = ownedClothing;
+    }
 }

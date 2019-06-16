@@ -11,5 +11,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ResponseStatus(HttpStatus.PAYMENT_REQUIRED)
 public class InsufficientFundsException extends Throwable {
     public InsufficientFundsException(String insufficient_funds) {
+        super(s);
     }
 }
