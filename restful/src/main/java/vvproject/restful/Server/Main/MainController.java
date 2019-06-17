@@ -56,7 +56,7 @@ public class MainController {
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
-    public ResponseEntity<Void> buyClothing(@PathVariable Long id, @RequestHeader Map<String, String> headers) throws ClothingNotFoundException, InsufficientFundsException, MemberNotFoundException, WrongLoginException {
+    public ResponseEntity<String> buyClothing(@PathVariable Long id, @RequestHeader Map<String, String> headers) throws ClothingNotFoundException, InsufficientFundsException, MemberNotFoundException, WrongLoginException {
         return this.mainService.buyClothing(id, headers.get("username"), headers.get("password"));
     }
 

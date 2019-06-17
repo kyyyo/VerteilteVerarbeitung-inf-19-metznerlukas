@@ -35,7 +35,16 @@ public class Clothing {
     private Member owner;
 
     public Clothing() {
+        this.clothingStatus = ClothingStatus.INSHOP;
+    }
 
+    public Clothing(Gender gender, Type type, Size size, float originalPrice, float exchangePrice) {
+        this.gender = gender;
+        this.type = type;
+        this.size = size;
+        this.originalPrice = originalPrice;
+        this.exchangePrice = exchangePrice;
+        this.clothingStatus = ClothingStatus.INSHOP;
     }
 
     public Clothing(Gender gender, Type type, Size size, float originalPrice, float exchangePrice, Member owner) {

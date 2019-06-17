@@ -57,12 +57,24 @@ public class MainService {
         return new ResponseEntity<>(this.clothingService.findAll(), HttpStatus.OK);
     }
 
-    public ResponseEntity<Void> buyClothing(Long id, String username, String password) throws ClothingNotFoundException, InsufficientFundsException, MemberNotFoundException, WrongLoginException {
-        Member buyer = this.memberService.login(username, password);
-        Clothing clothingToBePurchased = this.clothingService.findById(id);
+    public ResponseEntity<String> buyClothing(Long id, String username, String password){
+        Member buyer = null;
+        try {
+            buyer = this.memberService.login(username, password);
+        } catch (MemberNotFoundException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+        } catch (WrongLoginException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.FORBIDDEN);
+        }
+        Clothing clothingToBePurchased = null;
+        try {
+            clothingToBePurchased = this.clothingService.findById(id);
+        } catch (ClothingNotFoundException e) {
+            return new ResponseEntity<>("Clothing you want to buy does not exist.", HttpStatus.NOT_FOUND);
+        }
         Member seller = clothingToBePurchased.getOwner();
         if (buyer.getAccountBalance() < (clothingToBePurchased.getExchangePrice() + 0.5f))
-            throw new InsufficientFundsException("Insufficient funds");
+            return new ResponseEntity<>("Insufficient funds", HttpStatus.PAYMENT_REQUIRED);
 
         buyer.removeBalance(clothingToBePurchased.getExchangePrice() - 0.5f);
         seller.addBalance(clothingToBePurchased.getExchangePrice() - 0.5f);
@@ -73,8 +85,12 @@ public class MainService {
         Transaction transaction = new Transaction(clothingToBePurchased, buyer, seller);
 
         this.clothingService.updateClothing(clothingToBePurchased);
-        this.memberService.updateMember(buyer);
-        this.memberService.updateMember(seller);
+        try {
+            this.memberService.updateMember(buyer);
+            this.memberService.updateMember(seller);
+        } catch (MemberNotFoundException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+        }
         this.transactionService.saveTransaction(transaction);
 
         return new ResponseEntity<>(HttpStatus.OK);
