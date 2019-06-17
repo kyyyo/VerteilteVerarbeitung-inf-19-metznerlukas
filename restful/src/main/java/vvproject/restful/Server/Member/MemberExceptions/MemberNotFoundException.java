@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 /**
  * MemberNotFoundException is thrown when a user
  * is not found in the database.
+ *
  * @author Lukas Metzner, sINFlumetz
  */
 @ResponseStatus(HttpStatus.NOT_FOUND)

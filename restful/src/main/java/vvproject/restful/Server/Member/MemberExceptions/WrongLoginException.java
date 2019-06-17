@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 /**
  * WrongLoginException is used when the login
  * credentials of a user are wrong.
+ *
  * @author Lukas Metzner, sINFlumetz
  */
 @ResponseStatus(HttpStatus.FORBIDDEN)

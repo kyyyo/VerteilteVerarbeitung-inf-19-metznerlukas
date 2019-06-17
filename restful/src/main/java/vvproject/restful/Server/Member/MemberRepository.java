@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * This repository stores all user accounts
+ *
  * @author Lukas Metzner, sINFlumetz
  */
 @Repository("MemberRepository")

@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * Repository that stores all Transactions
+ *
  * @author Lukas Metzner, sINFlumetz
  */
 @Repository("TransactionRepository")

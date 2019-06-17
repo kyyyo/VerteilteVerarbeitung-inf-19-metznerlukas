@@ -1,5 +1,6 @@
 package vvproject.restful.Server.Clothing;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import vvproject.restful.Server.Enums.ClothingStatus;
 import vvproject.restful.Server.Enums.Gender;
 import vvproject.restful.Server.Enums.Size;
@@ -32,10 +33,20 @@ public class Clothing {
     private ClothingStatus clothingStatus;
 
     @ManyToOne
+    @JsonBackReference
     private Member owner;
 
     public Clothing() {
+        this.clothingStatus = ClothingStatus.INSHOP;
+    }
 
+    public Clothing(Gender gender, Type type, Size size, float originalPrice, float exchangePrice) {
+        this.gender = gender;
+        this.type = type;
+        this.size = size;
+        this.originalPrice = originalPrice;
+        this.exchangePrice = exchangePrice;
+        this.clothingStatus = ClothingStatus.INSHOP;
     }
 
     public Clothing(Gender gender, Type type, Size size, float originalPrice, float exchangePrice, Member owner) {

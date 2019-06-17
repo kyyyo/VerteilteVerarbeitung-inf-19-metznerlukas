@@ -7,7 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import vvproject.restful.Server.Clothing.Clothing;
 import vvproject.restful.Server.Clothing.ClothingExceptions.ClothingNotFoundException;
-import vvproject.restful.Server.Clothing.ClothingExceptions.InsufficientFundsException;
 import vvproject.restful.Server.Clothing.ClothingService;
 import vvproject.restful.Server.Enums.ClothingStatus;
 import vvproject.restful.Server.Main.MainExceptions.MaxSellingSizeException;
@@ -26,6 +25,7 @@ import java.util.List;
 /**
  * Main services contains the main logic of the Server.
  * Combines all the subservices.
+ *
  * @author Lukas Metzner, sINFlumetz
  */
 @Service("MainService")
@@ -46,6 +46,7 @@ public class MainService {
         Clothing toRemove = this.clothingService.findById(clothingId);
         owner.removeClothing(toRemove);
         this.memberService.updateMember(owner);
+        this.clothingService.deleteClothing(toRemove);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
@@ -57,12 +58,26 @@ public class MainService {
         return new ResponseEntity<>(this.clothingService.findAll(), HttpStatus.OK);
     }
 
-    public ResponseEntity<Void> buyClothing(Long id, String username, String password) throws ClothingNotFoundException, InsufficientFundsException, MemberNotFoundException, WrongLoginException {
-        Member buyer = this.memberService.login(username, password);
-        Clothing clothingToBePurchased = this.clothingService.findById(id);
+    public ResponseEntity<String> buyClothing(Long id, String username, String password) {
+        Member buyer = null;
+        try {
+            buyer = this.memberService.login(username, password);
+        } catch (MemberNotFoundException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+        } catch (WrongLoginException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.FORBIDDEN);
+        }
+        Clothing clothingToBePurchased = null;
+        try {
+            clothingToBePurchased = this.clothingService.findById(id);
+        } catch (ClothingNotFoundException e) {
+            return new ResponseEntity<>("Clothing you want to buy does not exist.", HttpStatus.NOT_FOUND);
+        }
         Member seller = clothingToBePurchased.getOwner();
         if (buyer.getAccountBalance() < (clothingToBePurchased.getExchangePrice() + 0.5f))
-            throw new InsufficientFundsException("Insufficient funds");
+            return new ResponseEntity<>("Insufficient funds", HttpStatus.PAYMENT_REQUIRED);
+        if (clothingToBePurchased.getClothingStatus().equals(ClothingStatus.SOLD))
+            return new ResponseEntity<>("Item already sold", HttpStatus.GONE);
 
         buyer.removeBalance(clothingToBePurchased.getExchangePrice() - 0.5f);
         seller.addBalance(clothingToBePurchased.getExchangePrice() - 0.5f);
@@ -73,14 +88,18 @@ public class MainService {
         Transaction transaction = new Transaction(clothingToBePurchased, buyer, seller);
 
         this.clothingService.updateClothing(clothingToBePurchased);
-        this.memberService.updateMember(buyer);
-        this.memberService.updateMember(seller);
+        try {
+            this.memberService.updateMember(buyer);
+            this.memberService.updateMember(seller);
+        } catch (MemberNotFoundException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+        }
         this.transactionService.saveTransaction(transaction);
 
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    public ResponseEntity<Void> sellClothing(Clothing c, String username, String password) throws WrongPricingException, MaxSellingSizeException, MemberNotFoundException, WrongLoginException {
+    public ResponseEntity<Clothing> sellClothing(Clothing c, String username, String password) throws WrongPricingException, MaxSellingSizeException, MemberNotFoundException, WrongLoginException {
         Member seller = this.memberService.login(username, password);
         if ((c.getExchangePrice() / c.getOriginalPrice()) > 0.5 || (c.getExchangePrice() / c.getOriginalPrice()) < 0.1)
             throw new WrongPricingException("Exchange price should be between 10 and 50 percent of the original price.");
@@ -100,14 +119,14 @@ public class MainService {
         seller.addClothing(clothing);
         this.clothingService.saveClothing(clothing);
         this.memberService.updateMember(seller);
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(c, HttpStatus.OK);
     }
 
-    public ResponseEntity<Void> register(Member m) {
+    public ResponseEntity<Member> register(Member m) {
         String hashedPw = Hashing.sha256().hashString(m.getPassword(), StandardCharsets.UTF_8).toString();
         m.setPassword(hashedPw);
         this.memberService.saveMember(m);
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(m, HttpStatus.OK);
     }
 
     public ResponseEntity<List<Transaction>> getAllTransactions() {
@@ -116,5 +135,13 @@ public class MainService {
 
     public ResponseEntity<Transaction> getTransaction(Long id) throws TransactionNotFoundException {
         return new ResponseEntity<>(this.transactionService.findById(id), HttpStatus.OK);
+    }
+
+    public ResponseEntity<Void> updateClothing(Clothing c, String username, String password) throws MemberNotFoundException, WrongLoginException, ClothingNotFoundException {
+        Member m = this.memberService.login(username, password);
+        if (m == null)
+            throw new WrongLoginException("Wrong login credentials");
+        this.clothingService.updateClothing(c);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }

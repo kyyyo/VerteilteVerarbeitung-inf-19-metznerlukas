@@ -11,6 +11,7 @@ import java.util.Optional;
 /**
  * Service that controlls the transaction repository
  * and resolves the Optionals received from the repository
+ *
  * @author Lukas Metzner, sINFlumetz
  */
 @Service("TransactionService")
@@ -34,7 +35,7 @@ public class TransactionService {
 
     public Transaction findById(Long id) throws TransactionNotFoundException {
         Optional<Transaction> optionalTransaction = this.transactionRepository.findById(id);
-        if(optionalTransaction.isPresent()){
+        if (optionalTransaction.isPresent()) {
             return optionalTransaction.get();
         } else {
             throw new TransactionNotFoundException("Transaction with id: " + id + " not found!");

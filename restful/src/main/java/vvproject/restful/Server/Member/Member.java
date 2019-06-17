@@ -1,5 +1,6 @@
 package vvproject.restful.Server.Member;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import vvproject.restful.Server.Clothing.Clothing;
 
 import javax.persistence.Entity;
@@ -13,11 +14,13 @@ import java.util.Objects;
  * The member class represents a account in the
  * database storing information like the unique username
  * or the hashed password.
+ *
  * @author Lukas Metzner, sINFlumetz
  */
 @Entity
 public class Member {
     @OneToMany
+    @JsonManagedReference
     List<Clothing> ownedClothing;
     @Id
     private String username;
@@ -33,7 +36,6 @@ public class Member {
     private int postCode;
 
     public Member() {
-
     }
 
     public Member(String username, String password, String preName, String lastName, String eMail, String postTown, String address, int postCode, Long version, float accountBalance) {
@@ -102,6 +104,10 @@ public class Member {
         return password;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public Long getVersion() {
         return version;
     }
@@ -156,10 +162,6 @@ public class Member {
 
     public void setPostCode(int postCode) {
         this.postCode = postCode;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public List<Clothing> getOwnedClothing() {

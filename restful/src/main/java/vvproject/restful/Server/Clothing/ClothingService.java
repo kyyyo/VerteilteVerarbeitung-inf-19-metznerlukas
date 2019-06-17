@@ -14,6 +14,7 @@ import java.util.Optional;
 /**
  * Clothing service handles the access for the
  * clothing database. -> Resolving Optional<Clothing>
+ *
  * @author Lukas Metzner, sINFlumetz
  */
 @Service("ClothingService")
@@ -49,6 +50,20 @@ public class ClothingService {
     }
 
     public void updateClothing(Clothing c) {
-        this.clothingRepository.save(c);
+        Optional<Clothing> oldClothing = this.clothingRepository.findById(c.getId()).map(old -> {
+            old.setGender(c.getGender());
+            old.setSize(c.getSize());
+            old.setType(c.getType());
+            old.setOriginalPrice(c.getOriginalPrice());
+            old.setExchangePrice(c.getExchangePrice());
+
+            this.clothingRepository.save(old);
+            return old;
+        });
+
+    }
+
+    public void deleteClothing(Clothing c) {
+        this.clothingRepository.delete(c);
     }
 }
