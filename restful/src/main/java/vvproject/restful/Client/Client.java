@@ -5,6 +5,7 @@ import vvproject.restful.Client.ClientExceptions.TransactionFailedException;
 import vvproject.restful.Client.Management.ClothingManagement;
 import vvproject.restful.Client.Management.MemberManagement;
 import vvproject.restful.Client.Management.TransactionManagement;
+import vvproject.restful.Client.ClientExceptions.SellingErrorException;
 import vvproject.restful.Server.Clothing.Clothing;
 import vvproject.restful.Server.Clothing.ClothingExceptions.ClothingNotFoundException;
 import vvproject.restful.Server.Enums.Gender;
