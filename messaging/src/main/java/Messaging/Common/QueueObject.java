@@ -1,21 +1,27 @@
 package Messaging.Common;
 
 import java.util.Objects;
+import java.util.UUID;
 
+/**
+ * Stores all information about the current
+ * vehicle which is than send to the server.
+ *
+ * @author Lukas Metzner; sINFlumetz
+ */
 public class QueueObject {
 
-    private String Id;
+    private UUID id;
     private String GPSData;
     private int drivenKm;
     private String messageCreated;
     private Severity messageIsSevere;
 
     public QueueObject() {
-
     }
 
-    public QueueObject(String id, String GPSData, int drivenKm, String messageCreated, Severity messageIsSevere) {
-        this.Id = id;
+    public QueueObject(UUID id, String GPSData, int drivenKm, String messageCreated, Severity messageIsSevere) {
+        this.id = id;
         this.GPSData = GPSData;
         this.drivenKm = drivenKm;
         this.messageCreated = messageCreated;
@@ -27,7 +33,7 @@ public class QueueObject {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         QueueObject that = (QueueObject) o;
-        return Objects.equals(Id, that.Id);
+        return Objects.equals(id, that.id);
     }
 
     public Severity getMessageIsSevere() {
@@ -40,15 +46,15 @@ public class QueueObject {
 
     @Override
     public int hashCode() {
-        return Objects.hash(Id);
+        return Objects.hash(id);
     }
 
-    public String getId() {
-        return Id;
+    public UUID getId() {
+        return id;
     }
 
     public void setId(String id) {
-        Id = id;
+        this.id = UUID.fromString(id);
     }
 
     public String getGPSData() {
